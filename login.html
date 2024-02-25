@@ -14,48 +14,35 @@
 <!-- <!__ Nhúng css __> -->
 <link rel="stylesheet" href="./styles/style.css">
 
-<!-- nhúng firebase -->
-<script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
-
 </head>
 <body>
 
     <!-- main -->
 	<div class="main-w3layouts wrapper">
-		<h1>Register</h1>
+		<h1>Login</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-				<form action="#" method="post" id="register_form">
-
-					<input class="text" type="text" name="username" placeholder="Username" required="">
-                    <!-- <p class="check" id="name_error">Username must be filled!</p> -->
-
+				<form action="#" method="post">
+					<!-- <input class="text" type="text" name="Username" placeholder="Username" required=""> -->
 					<input class="text email" type="email" name="email" placeholder="Email" required="">
-                    <!-- <p class="check" id="name_error">Email must be filled!</p> -->
-
-					<input class="text" type="password" name="password" placeholder="Password"  required="">
-                    <!-- <p class="name_error check">Password must be filled!</p> -->
-
-					<input class="text w3lpass" type="password" name="confirm_password" placeholder="Confirm Password"  required="" >
-                    <!-- <p class="name_error check">Confirm password must be filled!</p> -->
-
-					<div class="wthree-text">
+					<input class="text" type="password" name="password" placeholder="Password" required="">
+					<!-- <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required=""> -->
+					<!-- <div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">
 							<span>I Agree To The Terms & Conditions</span>
-							<!-- <p class="term&conditions_error check">Agree to term & conditions to continue!</p> -->
 						</label>
 						<div class="clear"> </div>
-					</div>
-					<button type="submit" value="SIGNUP">Register</button>
+					</div> -->
+					<button type="submit" value="Login">Login</button>
+
 				</form>
-				<p>Already have an account? <a href="login.html"> Login Now!</a></p>
+				<p>Don't have an account? <a href="signUp.html"> Resgister Now!</a></p>
 			</div>
 		</div>
 		<!-- //copyright -->
 		<ul class="colorlib-bubbles">
-			<li></li>
+			 <li></li>
 			<li></li>
 			<li></li>
 			<li></li>
@@ -69,6 +56,7 @@
 	</div>
 	<!-- //main -->
 	<script type="module" src="scripts/firebase.js"></script>
+    <script type="module" src="login.js"></script>
     <script type="module" src="signUp.js"></script>
     <script src="controller.js"></script>
 
